@@ -10,7 +10,8 @@ fun main(){
 //    println(myArray.last())
 
 //    kumeler()
-    kumeler_deneme()
+//    kumeler_deneme()
+    sozlukler()
 }
 
 fun Listeler(){
@@ -47,4 +48,14 @@ fun kumeler_deneme(){
     println("kesişimi $kume4")
 
 
+}
+fun sozlukler(){
+    val yemek = arrayListOf("elma","et","çorba")
+    val kalori = arrayListOf(100,200,300)
+    val yemekKaloriMap = hashMapOf<String,Int>()
+    yemekKaloriMap.put("elma",100)
+    yemekKaloriMap.put("et",200)
+    yemekKaloriMap.put("çorba",300)
+    println(yemekKaloriMap["et"])
+    println(yemekKaloriMap.get("et"))
 }
